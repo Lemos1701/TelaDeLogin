@@ -1,0 +1,36 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Tela de login</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="touchable">
+                <div class="inputs">
+                    <div>
+                        <label id="emailLabel">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label>Senha:</label>
+                        <input type="password" id="senha" required> 
+                    </div>
+
+                </div>
+                <div class="warning">
+                    <p></p>
+                </div>
+                <button class="login">Entrar</button>
+                <p id="signIn"> Não tem conta? <a href="indexCadastro.html">Cadastre-se</a> </p>
+            </div>
+        </section>
+    </main>
+    <script src="../data/users.js"></script>
+    <script src="../scriptLogin.js"></script>
+</body>
+</html>
