@@ -58,7 +58,35 @@ input {
     height: 5dvh;
     font-size: 1.2rem;
     color: white;
+    width: 20dvw;
     text-indent: 1dvw;
+    padding-right: 3.5dvh;
+    padding-left: 1dvw;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container .icon-button {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    height: 100%;
+    width: 3dvh;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    background-image: url(../assets/visible.png);
+    background-repeat: no-repeat;
+    background-size: 3dvh;
+    background-position: center;
+}
+
+.icon-button:focus {
+    outline: none;
 }
 
 input:focus {
@@ -79,7 +107,7 @@ div.warning {
     height: 10dvh;
 }
 
-button {
+button.login {
     margin-top: 10dvh;
     border: 1px solid white;
     border-radius: 30px;
@@ -92,7 +120,7 @@ button {
     height: 8dvh;
 }
 
-button:hover {
+button.login:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 

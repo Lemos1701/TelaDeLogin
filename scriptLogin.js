@@ -1,4 +1,21 @@
 let dataBase = users;
+let check = 0;
+
+function showPassword (verificador) {
+    let passwordInput = document.getElementById("senha");
+    if (check == 0) {
+        check = 1;
+        passwordInput.type = "text";
+        visiblePassword.style.backgroundImage = "url('../assets/invisible.png')";
+        console.log(check);
+    } else {
+        check = 0;
+        passwordInput.type = "password";
+        visiblePassword.style.backgroundImage = "url('../assets/visible.png')";
+        console.log(check);
+    }
+}
+
 function error(mensagem) {
     document.querySelector(".warning").innerText = "";
     let warning = document.querySelector(".warning");
@@ -31,4 +48,9 @@ button.addEventListener("click", () => {
         }
     document.querySelector(".warning").innerText = "";
     login(dataBase);
+});
+
+let visiblePassword = document.querySelector(".icon-button");
+visiblePassword.addEventListener("click", () => {
+    showPassword(check);
 });
