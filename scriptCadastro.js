@@ -55,3 +55,8 @@ button.addEventListener("click", () => {
     document.querySelector(".warning").innerText = "";
     cadastro(dataBase);
 });
+
+let visiblePassword = document.querySelector(".icon-button");
+visiblePassword.addEventListener("click", () => {
+    showPassword(check);
+});
