@@ -27,7 +27,6 @@ function error(mensagem) {
 }
 
 function cadastro() {
-    let verifica = 0;
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
     let obj = {
@@ -40,6 +39,9 @@ function cadastro() {
             return;
         }
     }
+
+    document.getElementById("email").value = "";
+    document.getElementById("senha").value = "";
 
     dataBase.push(obj);
     console.log(dataBase);
