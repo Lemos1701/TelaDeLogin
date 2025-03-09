@@ -6,12 +6,12 @@ function showPassword (verificador) {
     if (check == 0) {
         check = 1;
         passwordInput.type = "text";
-        visiblePassword.style.backgroundImage = "url('../assets/invisible.png')";
+        visiblePassword.style.backgroundImage = "url('assets/invisible.png')";
         console.log(check);
     } else {
         check = 0;
         passwordInput.type = "password";
-        visiblePassword.style.backgroundImage = "url('../assets/visible.png')";
+        visiblePassword.style.backgroundImage = "url('assets/visible.png')";
         console.log(check);
     }
 }
